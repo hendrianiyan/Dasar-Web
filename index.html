@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DasarWeb</title>
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+    $("#hide").click(function() {
+    $("p").hide();});
+    $("#show").click(function() {
+    $("p").show();});
+    });
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+header {
+	background-image: url('mangkunegaran.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #666;
+  padding: 30px;
+  font-size: 35px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Section */
+section {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px 0;
+}
+
+article {
+	flex: 2;
+	padding: 20px;
+	margin: 10px;
+	background-color: #eee;
+}
+
+aside {
+  max-width: 300px;
+	flex: 1;
+	padding: 20px;
+	margin: 10px;
+	background-color: #f5f5f5;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px 0;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+	<header>
+		<h1 style="text-align: center; color:white">Surakarta</h1>
+		<nav>
+			<ul style="display: contents;">
+				<li><a href="#ar1">Sejarah</a></li>
+				<li><a href="#ar2">Wisata</a></li>
+				<li><a href="#ar3">Kontak</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section>
+		<article>
+      <h6 style="display: block;">Klik tombol untuk menampilkan dan menghilangkan konten.</h6>
+      <button id="hide">Sembunyikan</button>
+      <button id="show">Tampilkan</button>
+      <br>
+			<h1 id="ar1">Sejarah</h1>
+      <div class="clearfix">
+        <div class="img-container">
+        <img src="sejarah3.jpg" alt="lawas" style="width:100%">
+        </div>
+        <div class="img-container">
+        <img src="sejarah1.jpg" alt="kratonlama" style="width:100%">
+        </div>
+      </div>
+			<p>Surakarta atau yang lebih dikenal dengan nama Solo, adalah sebuah kota di Provinsi Jawa Tengah, Indonesia. Sejarah kota Surakarta dapat dilacak hingga abad ke-16, ketika daerah ini menjadi pusat Kerajaan Mataram Islam.
+      Pada awalnya, Surakarta hanya merupakan sebuah kampung kecil yang dikenal sebagai Sala. Namun, pada tahun 1745, kampung ini dijadikan ibu kota Kerajaan Mataram Islam yang baru, yang kemudian dikenal sebagai Kesultanan Surakarta.
+      Kesultanan Surakarta tetap menjadi kekuatan penting di wilayah Jawa Tengah hingga akhir abad ke-19, ketika Belanda berhasil menguasai wilayah tersebut. Selama masa kolonial, Surakarta menjadi pusat perjuangan kemerdekaan Indonesia.
+      Setelah Indonesia merdeka, Surakarta menjadi bagian dari Provinsi Jawa Tengah. Saat ini, kota Surakarta merupakan salah satu kota terbesar di wilayah Jawa Tengah dan memiliki banyak tempat wisata dan kebudayaan yang menarik untuk dikunjungi.
+     </p>
+     <hr>
+      <h1 id="ar2">Wisata</h1>
+      
+      <div class="clearfix">
+        <div class="img-container">
+        <img src="GEDE.png" alt="triwindu" style="width:100%">
+        </div>
+        <div class="img-container">
+        <img src="Sriwedari.jpg" alt="kraton" style="width:100%">
+        </div>
+        <div class="img-container">
+        <img src="pure.jpg" alt="Mountains" style="width:100%">
+        </div>
+      </div>
+      <p>Di Indonesia sendiri, ada banyak pilihan daerah berwisata, salah satunya tempat wisata Solo.
+        Kota Solo juga terkenal dengan batiknya yang digemari banyak wisatawan.
+        Keraton Surakarta Hadiningrat adalah tempat wisata Solo yang sudah sangat populer dan terkenal bagi para wisatawan dalam maupun luar negeri.
+        Daerah Keraton Surakarta Hadiningrat ini dibagi menjadi Alun-alun Lor, Alun-alun Kidul, Sasana Sumewa, Siti Hinggil Lord an Kidul, Kemandungan Lord an Kidul, Sri Manganti Lord an Kidul, Kedaton, serta Kamagangan.
+        Ada lokasi di keraton juga digunakan sebagai museum.
+        Salah satu alternatif wisata Solo dan Surakarta untuk wisata taman adalah, Taman Sriwedari.
+        Ini merupakan taman bersejarah yang telah ada sejak zaman kepemimpinan Pakubuwana X.
+        Pada bagian dinding atas 'gapura' ini terdapat lukisan bertajuk “Kresno Duto” yang menceritakan jaman Mahabharata.
+      </p>
+		</article>
+
+		<aside>
+			<img src="IMG_133.jpg" alt="diriku" width="100%"">
+			<ul style="list-style: none;">
+        <li>Nama : Hendrian Gunarwan</li>
+        <li>Pendidikan : Telkom University</li>
+        <li>Alamat : Bandung</li>
+        <li id="ar3"><a href="mailto:hendrian582@.com">Email Me</a></li>
+      </ul>
+		</aside>
+    </section>
+
+	<footer>
+		<p>&copy;Kota Surakarta | Hendrian Gunarwan 2023</p>
+	</footer>
+
+</body>
+</html>
